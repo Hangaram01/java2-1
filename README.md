@@ -298,6 +298,13 @@ JPanel 컨테이너에 BorderLayout 배치관리자를 성정하는 예
 JPanel p = new JPanel();
 p.setLayout(new BorderLayout()); // JPanel에 BorderLayout설정
 
+컨텐트팬의 배치관리자를 FlowerLayout 배치관리자를 성성하는 예
+Container c = frame.gerContentPane(); //프레임의 컨텐트팬 알아내기
+c.setLayout(mre FlowerLayout()); //컨텐트팬에 FlowerLayout 설정
+
+오류
+c.setLayout(FlowerLayout); //오류
+
 배치방법
 컴포넌트를 컨테이너 내에 왼쪽에서 오른쪽으로 배치
 다시 위에서 아래로 순서 배치
